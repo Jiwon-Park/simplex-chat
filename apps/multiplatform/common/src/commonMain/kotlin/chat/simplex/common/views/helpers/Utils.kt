@@ -116,9 +116,9 @@ expect fun SetupClipboardListener()
 // maximum image file size to be auto-accepted
 // Spec: spec/services/files.md#MAX_IMAGE_SIZE
 const val MAX_IMAGE_SIZE: Long = 10_485_760 // 10MB
-const val MAX_IMAGE_SIZE_AUTO_RCV: Long = 522_240 // 510KB (keeps original auto-receive behavior)
-const val MAX_VOICE_SIZE_AUTO_RCV: Long = 522_240 // 510KB (keeps original voice auto-receive behavior)
-const val MAX_VIDEO_SIZE_AUTO_RCV: Long = 1_047_552 // 1023KB
+const val MAX_IMAGE_SIZE_AUTO_RCV: Long = 10_485_760 // 10MB (keeps original auto-receive behavior)
+const val MAX_VOICE_SIZE_AUTO_RCV: Long = 10_485_760 // 10MB (keeps original voice auto-receive behavior)
+const val MAX_VIDEO_SIZE_AUTO_RCV: Long = 10_485_760 // 10MB
 
 const val MAX_VOICE_MILLIS_FOR_SENDING: Int = 300_000
 
