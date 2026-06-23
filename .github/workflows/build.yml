@@ -26,6 +26,9 @@ on:
       - "scripts/desktop/**"
       - ".github/**"
 
+permissions:
+  contents: write
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/v') }}
